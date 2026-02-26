@@ -15,7 +15,7 @@ function getUsers() {
     .then(data=> {
         console.log(data);
         data.forEach(element=>{
-            html+=`<li> ${element.name} ${element.status}${element.species} ${element.type}${element.gender} ${element.origin}<img src=${element.origin}></li>`
+            html+=`<li> ${element.name} ${element.status}${element.species} ${element.type}${element.gender} ${element.origin}<img src=${element.image}></li>`
         })
         content.innerHTML=html;
     })
@@ -24,3 +24,4 @@ function getUsers() {
     })
 
 }
+
